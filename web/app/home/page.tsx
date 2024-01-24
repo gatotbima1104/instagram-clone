@@ -1,62 +1,63 @@
 import React from "react";
 import Image from "next/image";
-import LogoInstagram from "../src/assets/ig.png";
-import Profile from "../src/assets/profile.png"
 import Sidebar from "../components/Sidebar";
-
+import StatusUser from "../components/Status";
 
 const HomePage = () => {
   return (
     <div className="w-full h-screen flex">
       {/* sidebar components */}
-      <Sidebar/>
-      
+      <Sidebar />
+
       {/* main components */}
-      <div className="border-l-2 h-screen w-full flex flex-col">
-        <div className="border bg-blue-300 p-5">
+      <div className="border-l-2 h-screen flex flex-col w-[800px] border">
+        <div className="p-5">
           {/* snap instagram */}
-          <div className="grid grid-cols-12 gap-4">
-            <div className="border flex flex-col items-center gap-2">
-              <button className="rounded-full border bg-blue-50 p-3">
-                <Image
-                  src={Profile}
-                  alt="snap-instagram"
-                  width={50}
-                  height={50}
-                  className="object-contain rounded-full"
-                />
-              </button>
-              <p className="text-xs">gatotbim</p>
+          <StatusUser />
+        </div>
+
+        <div className="h-screen flex justify-center">
+          {/* beranda */}
+          {/* Card timeline   */}
+          <div className="border-b-2 flex">
+            <div>
+              {/* <Image></Image> */}
+              <h3>Username</h3>
+              <p>Date Upload</p>
+              <button>More</button>
             </div>
-            <div className="border flex flex-col items-center gap-2">
-              <button className="rounded-full border bg-blue-50 p-3">
-                <Image
-                  src={LogoInstagram}
-                  alt="snap-instagram"
-                  width={20}
-                  height={20}
-                  className="object-contain rounded-full"
-                />
-              </button>
-              <p className="text-xs">gatotbim</p>
-            </div>
-            <div className="border flex flex-col items-center gap-2">
-              <button className="rounded-full border bg-blue-50 p-3">
-                <Image
-                  src={LogoInstagram}
-                  alt="snap-instagram"
-                  width={20}
-                  height={20}
-                  className="object-contain rounded-full"
-                />
-              </button>
-              <p className="text-xs">gatotbim</p>
+            <div>{/* <Images></Images> */}</div>
+
+            <div className="flex flex-col">
+              <div className="flex justify-between">
+                <div>
+                  <img src="" alt="" />
+                  <img src="" alt="" />
+                </div>
+                <img src="" alt="" />
+              </div>
+
+              <p>likes</p>
+              <h4>account username</h4>
+              <p>Description</p>
+
+              <div>
+                <button>view comment</button>
+                <input type="text" />
+              </div>
             </div>
           </div>
         </div>
-        <div className="bg-red-200">
-          {/* beranda */}
-          <h1>beranda</h1>
+      </div>
+
+      <div className="w-[400px] flex">
+        <div className="flex justify-between">
+          <img src="" alt="" />
+          <div>
+            <p>Username</p>
+            <p>namefull</p>
+          </div>
+          <button>switch</button>
         </div>
       </div>
     </div>

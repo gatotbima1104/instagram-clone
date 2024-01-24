@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import LogoInstagram from "../../src/assets/ig.png";
+import LogoInstagram from "../src/assets/ig.png";
 import { GoHomeFill } from "react-icons/go";
 import { LuSearch } from "react-icons/lu";
 import { MdOutlineExplore } from "react-icons/md";
@@ -15,7 +15,7 @@ import MenuBtn from "./btn/MenuBtn";
 
 const Sidebar = () => {
   return (
-    <div className="w-[18.75rem] h-screen justify-center">
+    <div className="w-[15.20rem] h-screen justify-center">
       <div className="items-center flex p-5">
         <Image
           src={LogoInstagram}
