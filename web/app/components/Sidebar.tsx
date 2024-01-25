@@ -15,7 +15,7 @@ import MenuBtn from "./btn/MenuBtn";
 
 const Sidebar = () => {
   return (
-    <div className="w-[15.20rem] h-screen justify-center">
+    <div>
       <div className="items-center flex p-5">
         <Image
           src={LogoInstagram}

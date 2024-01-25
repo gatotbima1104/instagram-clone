@@ -2,64 +2,33 @@ import React from "react";
 import Image from "next/image";
 import Sidebar from "../components/Sidebar";
 import StatusUser from "../components/Status";
+import BerandaUser from "../components/Beranda";
+import Tikus from "@/app/src/assets/tikus.jpeg"
 
 const HomePage = () => {
+  const onLike = () => {};
   return (
     <div className="w-full h-screen flex">
-      {/* sidebar components */}
-      <Sidebar />
-
-      {/* main components */}
-      <div className="border-l-2 h-screen flex flex-col w-[800px] border">
-        <div className="p-5">
-          {/* snap instagram */}
+      {/* sidebar */}
+      <div className="w-[15.20rem] h-screen justify-center fixed border-r-2">
+        <Sidebar />
+      </div>
+      {/* main */}
+      <div className="flex-1 border h-screen ml-0">
+        <div className="mt-5">
           <StatusUser />
         </div>
-
-        <div className="h-screen flex justify-center">
-          {/* beranda */}
-          {/* Card timeline   */}
-          <div className="border-b-2 flex">
-            <div>
-              {/* <Image></Image> */}
-              <h3>Username</h3>
-              <p>Date Upload</p>
-              <button>More</button>
-            </div>
-            <div>{/* <Images></Images> */}</div>
-
-            <div className="flex flex-col">
-              <div className="flex justify-between">
-                <div>
-                  <img src="" alt="" />
-                  <img src="" alt="" />
-                </div>
-                <img src="" alt="" />
-              </div>
-
-              <p>likes</p>
-              <h4>account username</h4>
-              <p>Description</p>
-
-              <div>
-                <button>view comment</button>
-                <input type="text" />
-              </div>
-            </div>
-          </div>
+        <div className="flex justify-center mt-5 flex-col items-center">
+          <BerandaUser />
         </div>
       </div>
-
-      <div className="w-[400px] flex">
-        <div className="flex justify-between">
-          <img src="" alt="" />
-          <div>
-            <p>Username</p>
-            <p>namefull</p>
+      {/* setting */}
+      <div className="border ">
+          <div className="w-[200px] h-[50px] hover:bg-slate-300 transition-all">
+            
           </div>
-          <button>switch</button>
-        </div>
       </div>
+
     </div>
   );
 };

@@ -1,23 +1,16 @@
+'use client'
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
+import { IStatusUser } from "@/app/interface/userInterface";
 
-interface Status {
-    imageSrc: StaticImageData,
-    username: string
-}
-
-const StatusProfile: React.FC<Status> = ({imageSrc, username}) => {
+const StatusProfile: React.FC<IStatusUser> = ({imageSrc, username}) => {
   return (
-    <div className="flex flex-col items-center hover:cursor-pointer">
-      <button className="rounded-full bg-blue-50 p-3">
-        <Image
-          src={imageSrc}
-          alt="snap-instagram"
-          width={40}
-          height={40}
-          className="object-fit rounded-full"
-        />
-      </button>
+    <div className="flex flex-col items-center hover:cursor-pointer gap-2">
+      <Image
+        src={imageSrc}
+        alt="profile-instagram"
+        className="w-[3.5rem] h-[3.5rem] rounded-full border object-cover"
+      />
       <p className="text-xs">{username}</p>
     </div>
   );
