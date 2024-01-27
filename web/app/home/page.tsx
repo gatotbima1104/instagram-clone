@@ -7,7 +7,7 @@ import AccountSetting from "../components/AccountSetting";
 const HomePage = () => {
   const onLike = () => {};
   return (
-    <div className="max-h-screen grid grid-cols-12">
+    <div className="max-h-screen grid grid-cols-12 overflow-y-scroll">
         <Sidebar />
         <MainPage/>
         <AccountSetting/>

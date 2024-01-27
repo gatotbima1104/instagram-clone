@@ -1,6 +1,9 @@
 import React from "react";
 import SnapProfile from "./atomic/SnapProfile";
 import { Snap } from "../constant/Snap";
+import Mar from "@/app/src/assets/mar.jpeg";
+import { Timeline } from "./layout/Timeline";
+import { Timelines } from "../constant/Timeline";
 
 export const MainPage = () => {
   return (
@@ -14,6 +17,17 @@ export const MainPage = () => {
           />
         ))}
       </div>
+
+      {Timelines.map((item, index) => (
+        <Timeline
+          key={item.id}
+          imageSrc={item.imageSrc}
+          time={item.time}
+          totalLikes={item.totalLikes}
+          description={item.description}
+          username={item.username}
+        />
+      ))}
     </div>
   );
 };

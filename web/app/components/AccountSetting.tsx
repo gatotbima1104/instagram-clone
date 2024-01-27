@@ -1,8 +1,6 @@
 import React from "react";
-import PhotoProfile from "./atomic/PhotoProfile";
 import Mar from "@/app/src/assets/mar.jpeg";
 import { ProfileSetting } from "./layout/ProfileSetting";
-import { Suggested } from "../constant/Suggested";
 import { SuggestedProfile } from "./layout/Suggested";
 
 const AccountSetting = () => {
@@ -22,7 +20,10 @@ const AccountSetting = () => {
           <p className="text-slate-600 text-sm font-semibold mb-2">
             Suggested for you{" "}
           </p>
-          <a href="" className="hover:text-black text-xs text-slate-700 font-bold">
+          <a
+            href=""
+            className="hover:text-black text-xs text-slate-700 font-bold"
+          >
             See all
           </a>
         </div>
