@@ -1,5 +1,5 @@
 import React from "react";
-import StatusProfile from "./status/Snap";
+import StatusProfile from "./Snap";
 import BanUser from "../src/assets/ban.png";
 import Tikus from "../src/assets/tikus.jpeg";
 import Mar from "@/app/src/assets/mar.jpeg";

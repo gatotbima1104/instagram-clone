@@ -6,7 +6,7 @@ import { FaRegComment } from "react-icons/fa6";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { PiArchiveTray } from "react-icons/pi";
 import { RiEmotionNormalLine } from "react-icons/ri";
-import { IPost } from "../interface/userInterface";
+import { IPost } from "../../interface/userInterface";
 
 const PostUser: React.FC<IPost> = ({
   imageSrc,

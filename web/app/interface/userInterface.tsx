@@ -4,6 +4,7 @@ export interface IStatusUser {
   imageSrc: StaticImageData;
   username: string;
   fullName?: string;
+  actionButton?: string;
 }
 
 export interface IBtn {
@@ -17,4 +18,9 @@ export interface IPost {
   time: string;
   totalLikes: number;
   description?: string;
+}
+
+export interface IUserProfile{
+  imageSrc: StaticImageData;
+  username?: string
 }

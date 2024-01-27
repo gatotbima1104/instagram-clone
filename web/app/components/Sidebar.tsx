@@ -15,7 +15,7 @@ import MenuBtn from "./btn/MenuBtn";
 
 const Sidebar = () => {
   return (
-    <div>
+    <div className="col-span-3 me-32 border">
       <div className="items-center flex p-5">
         <Image
           src={LogoInstagram}
