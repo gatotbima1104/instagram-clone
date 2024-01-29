@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 import { HeaderProfile } from "../components/profile/Header";
-import Balmon from "@/app/src/assets/balmon.jpeg";
+import BCL from "@/app/src/assets/bcl.jpeg";
 import HighlightUser from "../components/profile/Highlight";
 import Gallery from "../components/profile/Gallery";
 
@@ -12,12 +12,12 @@ export const ProfilePage = () => {
       <Sidebar />
       <div className="col-span-9 me-28">
         <HeaderProfile
-          imageSrc={Balmon}
-          username="balmond"
-          totalFollower={70}
-          totalPost={20}
+          imageSrc={BCL}
+          username="Citra Lestari"
+          totalFollower={80}
+          totalPost={200}
           totalFollowing={899}
-          usernameBio="fighter-only braderr"
+          usernameBio="penyanyi indonesia"
           descriptionUser="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, repellat. Labore saepe esse non reprehenderit laudantium provident nemo eos et sapiente cum, alias sequi possimus itaque quidem consequatur officia beatae ex est molestias vel dignissimos numquam optio deserunt eum? Obcaecati, ducimus? Excepturi soluta minus fuga reprehenderit deleniti nostrum modi. Maxime?"
           follower={followers}
         />

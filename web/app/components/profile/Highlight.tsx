@@ -1,6 +1,4 @@
-import React from "react";
 import Image from "next/image";
-import Mar from "@/app/src/assets/balmon.jpeg";
 import { Higlight } from "@/app/constant/Highlight";
 
 const HighlightUser = () => {

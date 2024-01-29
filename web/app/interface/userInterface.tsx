@@ -11,7 +11,7 @@ export interface IStatusUser {
   totalFollower?: number;
   usernameBio?: string;
   descriptionUser?: string;
-  follower?: string[]
+  follower?: string[];
 }
 
 export interface IBtn {
@@ -27,12 +27,18 @@ export interface IPost {
   description?: string;
 }
 
-export interface IUserProfile{
+export interface IGallery {
   imageSrc: StaticImageData;
-  username?: string
+  totalComments: number;
+  totalLikes: number;
 }
 
-export interface IProfileBtn{
+export interface IUserProfile {
+  imageSrc: StaticImageData;
+  username?: string;
+}
+
+export interface IProfileBtn {
   text?: string;
   logo?: React.ElementType;
 }

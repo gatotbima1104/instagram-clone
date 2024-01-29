@@ -1,28 +1,31 @@
 import Mar from "@/app/src/assets/mar.jpeg";
 import Tikus from "@/app/src/assets/tikus.jpeg";
-import Ig from "@/app/src/assets/ig.png";
-import Ban from "@/app/src/assets/ban.png";
-import Profile from "@/app/src/assets/profile.png";
+import Hg1 from "@/app/src/assets/hg1.jpeg";
+import Hg2 from "@/app/src/assets/hg2.jpeg";
+import Hg4 from "@/app/src/assets/Hg4.jpeg";
+
+import Cantik from "@/app/src/assets/cantik.jpeg";
+import Cantik2 from "@/app/src/assets/download.jpeg";
 
 export const Higlight = [
   {
     id: 1,
-    src: Ig,
+    src: Hg1,
     alt: "lawan alucard",
   },
   {
     id: 2,
-    src: Ban,
+    src: Hg2,
     alt: "lawan alucard",
   },
   {
     id: 3,
-    src: Mar,
+    src: Cantik,
     alt: "lawan alucard",
   },
   {
     id: 4,
-    src: Mar,
+    src: Cantik2,
     alt: "lawan alucard",
   },
   {
@@ -32,7 +35,7 @@ export const Higlight = [
   },
   {
     id: 6,
-    src: Mar,
+    src: Hg4,
     alt: "lawan alucard",
   },
   {
