@@ -1,13 +1,14 @@
-import Mar from "@/app/src/assets/mar.jpeg";
-import Tikus from "@/app/src/assets/tikus.jpeg";
-import Ig from "@/app/src/assets/ig.png";
-import Ban from "@/app/src/assets/ban.png";
-import Profile from "@/app/src/assets/profile.png";
+import Hg1 from "@/app/src/assets/hg1.jpeg";
+import Hg2 from "@/app/src/assets/hg2.jpeg";
+import Hg4 from "@/app/src/assets/Hg4.jpeg";
+
+import Cantik from "@/app/src/assets/cantik.jpeg";
+import Cantik2 from "@/app/src/assets/download.jpeg";
 
 export const Timelines = [
     {
         id: 1,
-        imageSrc:Mar,
+        imageSrc:Hg1,
         time:"30",
         username:"azi kurniawan",
         description:"hello brother",
@@ -15,7 +16,7 @@ export const Timelines = [
     },
     {
         id: 2,
-        imageSrc:Tikus,
+        imageSrc:Hg2,
         time:"20",
         username:"galih purnomo",
         description:"ini saya dalam bentuk hewan",
@@ -23,7 +24,7 @@ export const Timelines = [
     },
     {
         id: 3,
-        imageSrc:Ban,
+        imageSrc:Hg4,
         time:"40",
         username:"planet ban",
         description:"salah satu ban recomended",
@@ -31,7 +32,7 @@ export const Timelines = [
     },
     {
         id: 4,
-        imageSrc:Profile,
+        imageSrc:Cantik2,
         time:"20",
         username:"bima cool",
         description:"ini saya dalam dunia seni",
@@ -39,7 +40,7 @@ export const Timelines = [
     },
     {
         id: 5,
-        imageSrc:Ig,
+        imageSrc:Cantik,
         time:"25",
         username:"verified",
         description:"ig buntut",

@@ -1,48 +1,49 @@
-import Mar from "@/app/src/assets/mar.jpeg";
-import Tikus from "@/app/src/assets/tikus.jpeg";
-import Ig from "@/app/src/assets/ig.png";
-import Ban from "@/app/src/assets/ban.png";
-import Profile from "@/app/src/assets/profile.png";
+import Hg1 from "@/app/src/assets/hg1.jpeg";
+import Hg2 from "@/app/src/assets/hg2.jpeg";
+import Hg4 from "@/app/src/assets/Hg4.jpeg";
+
+import Cantik from "@/app/src/assets/cantik.jpeg";
+import Cantik2 from "@/app/src/assets/download.jpeg";
 
 export const Snap = [
   {
     id: 1,
-    imageSrc: Mar,
+    imageSrc: Hg1,
     username: "gatotbim",
   },
   {
     id: 2,
-    imageSrc: Ig,
+    imageSrc: Hg2,
     username: "galih",
   },
   {
     id: 3,
-    imageSrc: Ban,
+    imageSrc: Cantik,
     username: "azi ",
   },
   {
     id: 4,
-    imageSrc: Tikus,
+    imageSrc: Cantik,
     username: "zhafran",
   },
   {
     id: 5,
-    imageSrc: Profile,
+    imageSrc: Cantik2,
     username: "tedy",
   },
   {
     id: 6,
-    imageSrc: Ig,
+    imageSrc: Cantik2,
     username: "galih",
   },
   {
     id: 7,
-    imageSrc: Ban,
+    imageSrc: Hg4,
     username: "azi ",
   },
   {
     id: 8,
-    imageSrc: Tikus,
+    imageSrc: Hg1,
     username: "zhafran",
   },
 ];
