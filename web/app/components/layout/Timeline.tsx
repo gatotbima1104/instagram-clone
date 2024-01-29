@@ -21,7 +21,7 @@ export const Timeline: React.FC<IPost> = ({
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
             <PhotoProfile imageSrc={imageSrc} />
-            <p className="font-bold text-sm">{username}</p>
+            <a href="/profile" className="font-bold text-sm">{username}</a>
             <p>.</p>
             <p className="text-xs text-slate-600">{time} mnt</p>
           </div>

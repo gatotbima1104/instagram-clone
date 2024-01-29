@@ -17,7 +17,7 @@ export const HeaderProfile: React.FC<IStatusUser> = ({
   follower,
 }) => {
   return (
-    <div className="grid grid-cols-12 me-28 p-2 mt-5 border">
+    <div className="grid grid-cols-12 p-2 my-5">
       <div className="col-span-4 justify-center flex items-center">
         <Image
           src={imageSrc}
