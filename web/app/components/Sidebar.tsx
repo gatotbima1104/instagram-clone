@@ -8,7 +8,7 @@ import { Menu } from "../constant/Menu";
 
 const Sidebar = () => {
   return (
-    <div className="col-span-3 me-32 border">
+    <div className="col-span-3 me-32 border-r-2 max-h-screen">
       <div className="items-center flex p-5">
         <Image
           src={LogoInstagram}

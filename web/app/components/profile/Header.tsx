@@ -25,7 +25,7 @@ export const HeaderProfile: React.FC<IStatusUser> = ({
           className="rounded-full w-[10rem] h-[10rem] object-cover border border-black"
         />
       </div>
-      <div className="col-span-8 gap-5 me-48 mt-2">
+      <div className="col-span-6 me-48 mt-2">
         <div className="font-semibold flex items-center justify-between">
           <h1 className="tracking-normal text-xl">{username}</h1>
           <ProfileBtn text="Following" logo={RiArrowDownSLine} />
@@ -33,7 +33,7 @@ export const HeaderProfile: React.FC<IStatusUser> = ({
           <ProfileBtn logo={IoPersonAddOutline} />
           <IoIosMore className="font-bold text-2xl" />
         </div>
-        <div className="my-5 flex gap-5">
+        <div className="my-5 flex gap-10">
           <p className="me-5">
             <span className="font-bold">{totalPost}</span> post
           </p>

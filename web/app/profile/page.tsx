@@ -1,16 +1,15 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
 import { HeaderProfile } from "../components/profile/Header";
 import BCL from "@/app/src/assets/bcl.jpeg";
 import HighlightUser from "../components/profile/Highlight";
 import Gallery from "../components/profile/Gallery";
+import LayoutMain from "../components/LayoutMain";
 
 export const ProfilePage = () => {
   const followers = ["yoga", "galih", "hanif"];
   return (
-    <div className="max-h-screen grid grid-cols-12 overflow-y-scroll">
-      <Sidebar />
-      <div className="col-span-9 me-28">
+    <LayoutMain>
+      <div className="mr-16">
         <HeaderProfile
           imageSrc={BCL}
           username="Citra Lestari"
@@ -21,10 +20,10 @@ export const ProfilePage = () => {
           descriptionUser="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, repellat. Labore saepe esse non reprehenderit laudantium provident nemo eos et sapiente cum, alias sequi possimus itaque quidem consequatur officia beatae ex est molestias vel dignissimos numquam optio deserunt eum? Obcaecati, ducimus? Excepturi soluta minus fuga reprehenderit deleniti nostrum modi. Maxime?"
           follower={followers}
         />
-        <HighlightUser/>
-        <Gallery/>
+        <HighlightUser />
+        <Gallery />
       </div>
-    </div>
+    </LayoutMain>
   );
 };
 
