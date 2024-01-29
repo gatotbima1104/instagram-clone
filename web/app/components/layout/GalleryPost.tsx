@@ -26,7 +26,7 @@ const GalleryPost: React.FC<IGallery> = ({
       <Image
         src={imageSrc} // Assuming Mar is the source URL for the image
         alt="posts"
-        className="w-[300px] h-[300px] object-cover"
+        className="w-[18.75rem] h-[18.75rem] object-cover"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       />

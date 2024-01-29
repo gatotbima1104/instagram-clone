@@ -9,7 +9,7 @@ const HighlightUser = () => {
           key={item.id}
           src={item.src}
           alt={item.alt}
-          className="rounded-full border border-black w-[80px] h-[80px] object-cover"
+          className="rounded-full border border-black w-[5rem] h-[5rem] object-cover"
         />
       ))}
     </div>

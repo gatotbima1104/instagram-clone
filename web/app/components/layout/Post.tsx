@@ -39,7 +39,7 @@ const PostUser: React.FC<IPost> = ({
       <Image
         src={imageSrc}
         alt="gambar-upload"
-        className="w-[450px] h-[450px] object-contain"
+        className="w-[28rem] h-[28rem] object-contain"
       />
 
       <div className="flex justify-between my-3">
