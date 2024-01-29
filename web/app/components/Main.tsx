@@ -8,7 +8,7 @@ import { Timelines } from "../constant/Timeline";
 export const MainPage = () => {
   return (
     <div className="col-span-6 me-24">
-      <div className="grid grid-cols-8 my-5">
+      <div className="grid grid-cols-8 my-5 overflow-x-auto">
         {Snap.map((item) => (
           <SnapProfile
             key={item.id}
@@ -18,7 +18,7 @@ export const MainPage = () => {
         ))}
       </div>
 
-      {Timelines.map((item, index) => (
+      {Timelines.map((item) => (
         <Timeline
           key={item.id}
           imageSrc={item.imageSrc}

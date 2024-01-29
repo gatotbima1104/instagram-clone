@@ -3,7 +3,7 @@ import { Higlight } from "@/app/constant/Highlight";
 
 const HighlightUser = () => {
   return (
-    <div className="flex gap-9 overflow-x-auto no-scrollbar scroll-smooth my-5 mx-24 mb-10">
+    <div className="flex gap-9 overflow-x-auto no-scrollbar scroll-smooth my-5 mx-44 mb-10">
       {Higlight.map((item) => (
         <Image
           key={item.id}

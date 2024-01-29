@@ -9,7 +9,7 @@ export const ProfilePage = () => {
   const followers = ["yoga", "galih", "hanif"];
   return (
     <LayoutMain>
-      <div className="mr-16">
+      <div className="-ms-20">
         <HeaderProfile
           imageSrc={BCL}
           username="Citra Lestari"

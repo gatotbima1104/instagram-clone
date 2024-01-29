@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SnapProfile: React.FC<IUserProfile> = ({ imageSrc, username  }) => {
   return (
-    <div className="flex flex-col gap-2 items-center">
+    <div className="flex flex-col gap-1 items-center">
       <Image
         src={imageSrc}
         alt="profile-logo"

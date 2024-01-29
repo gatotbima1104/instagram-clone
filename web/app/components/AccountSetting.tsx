@@ -5,7 +5,7 @@ import { SuggestedProfile } from "./layout/Suggested";
 
 const AccountSetting = () => {
   return (
-    <div className="col-span-3 me-16 flex flex-col mt-5">
+    <div className="col-span-3 flex flex-col mt-5 -ms-8">
       <div className="my-5">
         <ProfileSetting
           imageSrc={Mar}

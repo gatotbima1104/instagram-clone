@@ -30,4 +30,22 @@ export const GalleryPosts: Post[] = [
     totalComments: 90,
     totalLikes: 394,
   },
+  {
+    id: 4,
+    imageSrc: Cantik,
+    totalComments: 80,
+    totalLikes: 1990,
+  },
+  {
+    id: 5,
+    imageSrc: Post2,
+    totalComments: 90,
+    totalLikes: 394,
+  },
+  {
+    id: 6,
+    imageSrc: Hg5,
+    totalComments: 90,
+    totalLikes: 394,
+  },
 ];

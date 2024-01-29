@@ -23,7 +23,7 @@ const Sidebar = () => {
         ))}
       </div>
       {/* place this to the bottom  */}
-      <div className="p-5 mt-24">
+      <div className="px-5 mt-24">
         <MenuBtn logo={FaThreads} text="Threads" />
         <MenuBtn logo={HiOutlineBars3} text="More" />
       </div>
