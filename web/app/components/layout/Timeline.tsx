@@ -1,4 +1,6 @@
-import React from "react";
+'use client'
+
+import { useState } from "react";
 import PhotoProfile from "../atomic/PhotoProfile";
 import { IoIosMore } from "react-icons/io";
 import Image from "next/image";
@@ -15,6 +17,12 @@ export const Timeline: React.FC<IPost> = ({
   description,
   time,
 }) => {
+
+  const [isLiked, setIsLiked] = useState<boolean>(false)
+  const onLike = () => {
+    alert('liked')
+  }
+
   return (
     <div className="mx-[4.5rem] border-b-2 ">
       <div className="gap-2 flex flex-col pt-4">
@@ -40,7 +48,7 @@ export const Timeline: React.FC<IPost> = ({
 
         <div className="flex justify-between text-2xl">
           <div className="flex gap-3">
-            <GoHeart />
+            <GoHeart onClick={onLike} className="hover: cursor-pointer"/>
             <BsChat />
             <IoPaperPlaneOutline />
           </div>

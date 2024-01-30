@@ -12,15 +12,18 @@ const GalleryPost: React.FC<IGallery> = ({
   const [isHovering, setIsHovering] = useState<boolean>(false);
 
   const handleMouseEnter = () => {
-    setIsHovering(true);
+    setIsHovering(!isHovering);
+  };
+  const handleMouseLeave = () => {
+    setIsHovering(false)
   };
 
-  const handleMouseLeave = () => {
-    const timeoutId = setTimeout(() => {
-      setIsHovering(false);
-    }, 100);
-    return () => clearTimeout(timeoutId);
-  };
+  // const handleMouseLeave = () => {
+  //   const timeoutId = setTimeout(() => {
+  //     setIsHovering(false);
+  //   }, 100);
+  //   return () => clearTimeout(timeoutId);
+  // };
   return (
     <div className="relative hover:cursor-pointer hover:opacity-60 transition-opacity">
       <Image
