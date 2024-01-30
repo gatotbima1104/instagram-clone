@@ -7,35 +7,41 @@ const Register = () => {
   return (
     <div className="max-h-screen flex flex-col items-center justify-center">
       <div className="border mt-5 flex items-center justify-center flex-col px-10">
-        <Image alt="instagram logo" src={Ig} width={200} height={200} />
-        <div className="w-[18rem] text-center items-center flex justify-center flex-col">
+        <div className="mt-10">
+          <Image alt="instagram logo" src={Ig} width={200} height={200} />
+        </div>
+        <div className="w-[19rem] text-center items-center flex justify-center flex-col">
           <h1 className="font-bold text-base text-slate-500">
             Sign up to see photos and videos from your friends.
           </h1>
 
-          <LoginBtn icon={FaFacebookSquare} text="Log in with facebook" />
+          <LoginBtn
+            icon={FaFacebookSquare}
+            text="Log in with facebook"
+            className="w-[19rem]"
+          />
 
           <form className="border-t-2 pt-5 mx-6 mb-5">
             <input
               type="text"
               placeholder="Mobile Number or Email"
-              className="py-2 w-[15rem] rounded text-xs ps-3 mb-2 border"
+              className="py-2 w-[19rem] rounded text-xs ps-3 mb-2 border"
             />
 
             <input
               type="text"
               placeholder="Full Name"
-              className="py-2 w-[15rem] rounded text-xs ps-3 mb-2 border"
+              className="py-2 w-[19rem] rounded text-xs ps-3 mb-2 border"
             />
             <input
               type="text"
               placeholder="Username"
-              className="py-2 w-[15rem] rounded text-xs ps-3 mb-2 border"
+              className="py-2 w-[19rem] rounded text-xs ps-3 mb-2 border"
             />
             <input
               type="password"
               placeholder="Password"
-              className="py-2 w-[15rem] rounded text-xs ps-3 mb-2 border"
+              className="py-2 w-[19rem] rounded text-xs ps-3 mb-2 border"
             />
 
             <div>
@@ -48,18 +54,22 @@ const Register = () => {
                 Cookies Policy .
               </p>
             </div>
-            <LoginBtn text="Sign up" color="bg-blue-300"/>
+            <LoginBtn
+              text="Sign up"
+              color="bg-blue-300"
+              className="w-[19rem]"
+            />
           </form>
         </div>
       </div>
-      <div className="border mt-5 flex items-center justify-center w-[23rem] py-10 gap-3 text-sm">
+      <div className="border mt-5 flex items-center justify-center w-[24.2rem] py-5 gap-3 text-sm">
         <h1>Have an account?</h1>
-        <a className="font-bold text-blue-700" href="/login">
+        <a className="font-bold text-blue-700" href="/auth/login">
           Log in
         </a>
       </div>
 
-      <div className="mt-5 gap-5 grid grid-cols-10 text-xs text-slate-600 mb-5 w-1/2 text-center">
+      <div className="mt-32 gap-5 grid grid-cols-10 text-xs text-slate-600 mb-5 w-1/2 text-center">
         <a href="" className="hover:underline">
           About
         </a>
