@@ -2,6 +2,7 @@ import React from "react";
 import LayoutMain from "../components/LayoutMain";
 import Image from "next/image";
 import Bcl from "@/app/src/assets/bcl.jpeg";
+import { Explore } from "../constant/Explore";
 
 const page = () => {
   return (
@@ -10,27 +11,14 @@ const page = () => {
         <div className="grid grid-cols-3 grid-rows-2 h-[38.125rem]">
           <div className="col-span-2 ms-5">
             <div className="grid grid-cols-2 gap-1">
-              <Image
-                alt="image"
-                src={Bcl}
-                className="w-[18.75rem] h-[18.75rem] object-cover"
-              />
-              <Image
-                alt="image"
-                src={Bcl}
-                className="w-[18.75rem] h-[18.75rem] object-cover"
-              />
-
-              <Image
-                alt="image"
-                src={Bcl}
-                className="w-[18.75rem] h-[18.75rem] object-cover"
-              />
-              <Image
-                alt="image"
-                src={Bcl}
-                className="w-[18.75rem] h-[18.75rem] object-cover"
-              />
+                {Explore && Explore.map((item)=> (
+                    <Image
+                    key={item.id}
+                    alt={item.alt}
+                    src={item.imageSrc}
+                    className="w-[18.75rem] h-[18.75rem] object-cover"
+                  />
+                ))}
             </div>
           </div>
 
